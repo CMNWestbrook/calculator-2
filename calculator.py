@@ -18,21 +18,21 @@ while True:
         continue
 
     if tokens[0] == "+":
-        print(reduce((lambda x,y: add(int(x), int(y))), tokens[1:]))
+        print('{0:.2f}'.format(reduce((lambda x,y: add(int(x), int(y))), tokens[1:])))
     elif tokens[0] == "-":
-        print(reduce((lambda x,y: subtract(int(x), int(y))), tokens[1:]))
+        print('{0:.2f}'.format(reduce((lambda x,y: subtract(int(x), int(y))), tokens[1:])))
     elif tokens[0] == "*":
-        print(reduce((lambda x,y: multiply(int(x), int(y))), tokens[1:]))
+        print('{0:.2f}'.format(reduce((lambda x,y: multiply(int(x), int(y))), tokens[1:])))
     elif tokens[0] == "/":
-        print(reduce((lambda x,y: divide(int(x), int(y))), tokens[1:]))
+        print('{0:.2f}'.format(reduce((lambda x,y: divide(int(x), int(y))), tokens[1:])))
     elif tokens[0] == "square":
-        print(square(int(tokens[1])))
+        print('{0:.2f}'.format(square(int(tokens[1]))))
     elif tokens[0] == "cube":
-        print(cube(int(tokens[1])))
+        print('{0:.2f}'.format(cube(int(tokens[1]))))
     elif tokens[0] == "pow":
-        print(reduce((lambda x,y: power(int(x), int(y))), tokens[1:]))
+        print('{0:.2f}'.format(reduce((lambda x,y: power(int(x), int(y))), tokens[1:])))
     elif tokens[0] == "mod":
-        print(reduce((lambda x,y: mod(int(x), int(y))), tokens[1:]))
+        print('{0:.2f}'.format(reduce((lambda x,y: mod(int(x), int(y))), tokens[1:])))
     elif tokens[0].lower() == "q":
         break
     else:
